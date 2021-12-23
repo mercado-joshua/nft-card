@@ -1,0 +1,133 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.full-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #0d192b;
+}
+
+.nft-card {
+  width: 375px;
+  padding: 1.5em;
+  border-radius: 1em;
+  background-color: #14253d;
+  color: #fff;
+}
+.nft-card > .imagebox {
+  position: relative;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.nft-card > .imagebox > .image {
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.nft-card > .imagebox > .overlay {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 255, 247, 0.3);
+}
+.nft-card > .imagebox:hover .image {
+  opacity: 0.3;
+}
+.nft-card > .imagebox:hover .overlay {
+  opacity: 1;
+}
+.nft-card > .title {
+  margin: 0.6em 0;
+}
+.nft-card > .title:hover {
+  color: #00fff7;
+}
+.nft-card > .description {
+  font-size: 1.2rem;
+  color: #8bacda;
+}
+.nft-card > .infobox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #2f415b;
+}
+.nft-card > .infobox > .eth:hover {
+  color: #00fff7;
+}
+.nft-card > .authorbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  padding-top: 1em;
+}
+.nft-card > .authorbox > .avatarbox {
+  width: 2.5em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.nft-card > .authorbox > .message > .author:hover {
+  color: #00fff7;
+}
